@@ -1,0 +1,1280 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Katalog Intermediate nie kończy się ukośnikiem. To wystąpienie kompilacji doda ukośnik, ponieważ jest on niezbędny, aby możliwa była poprawna ocena katalogu Intermediate.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Katalog Output nie kończy się ukośnikiem. To wystąpienie kompilacji doda ukośnik, ponieważ jest on niezbędny, aby możliwa była poprawna ocena katalogu Output.
+  initalizer.cpp
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,9): warning C4005: "DXGI_STATUS_OCCLUDED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58160,9):
+      zobacz poprzednią definicję „DXGI_STATUS_OCCLUDED”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,9): warning C4005: "DXGI_STATUS_CLIPPED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58169,9):
+      zobacz poprzednią definicję „DXGI_STATUS_CLIPPED”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(14,9): warning C4005: "DXGI_STATUS_NO_REDIRECTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58178,9):
+      zobacz poprzednią definicję „DXGI_STATUS_NO_REDIRECTION”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(15,9): warning C4005: "DXGI_STATUS_NO_DESKTOP_ACCESS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58187,9):
+      zobacz poprzednią definicję „DXGI_STATUS_NO_DESKTOP_ACCESS”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(16,9): warning C4005: "DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58196,9):
+      zobacz poprzednią definicję „DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(17,9): warning C4005: "DXGI_STATUS_MODE_CHANGED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58205,9):
+      zobacz poprzednią definicję „DXGI_STATUS_MODE_CHANGED”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(18,9): warning C4005: "DXGI_STATUS_MODE_CHANGE_IN_PROGRESS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58214,9):
+      zobacz poprzednią definicję „DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(21,9): warning C4005: "DXGI_ERROR_INVALID_CALL": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58229,9):
+      zobacz poprzednią definicję „DXGI_ERROR_INVALID_CALL”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(22,9): warning C4005: "DXGI_ERROR_NOT_FOUND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58238,9):
+      zobacz poprzednią definicję „DXGI_ERROR_NOT_FOUND”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(23,9): warning C4005: "DXGI_ERROR_MORE_DATA": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58247,9):
+      zobacz poprzednią definicję „DXGI_ERROR_MORE_DATA”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(24,9): warning C4005: "DXGI_ERROR_UNSUPPORTED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58256,9):
+      zobacz poprzednią definicję „DXGI_ERROR_UNSUPPORTED”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(25,9): warning C4005: "DXGI_ERROR_DEVICE_REMOVED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58265,9):
+      zobacz poprzednią definicję „DXGI_ERROR_DEVICE_REMOVED”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(26,9): warning C4005: "DXGI_ERROR_DEVICE_HUNG": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58274,9):
+      zobacz poprzednią definicję „DXGI_ERROR_DEVICE_HUNG”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(27,9): warning C4005: "DXGI_ERROR_DEVICE_RESET": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58284,9):
+      zobacz poprzednią definicję „DXGI_ERROR_DEVICE_RESET”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(28,9): warning C4005: "DXGI_ERROR_WAS_STILL_DRAWING": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58293,9):
+      zobacz poprzednią definicję „DXGI_ERROR_WAS_STILL_DRAWING”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(29,9): warning C4005: "DXGI_ERROR_FRAME_STATISTICS_DISJOINT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58303,9):
+      zobacz poprzednią definicję „DXGI_ERROR_FRAME_STATISTICS_DISJOINT”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(30,9): warning C4005: "DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58312,9):
+      zobacz poprzednią definicję „DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(31,9): warning C4005: "DXGI_ERROR_DRIVER_INTERNAL_ERROR": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58322,9):
+      zobacz poprzednią definicję „DXGI_ERROR_DRIVER_INTERNAL_ERROR”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(32,9): warning C4005: "DXGI_ERROR_NONEXCLUSIVE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58331,9):
+      zobacz poprzednią definicję „DXGI_ERROR_NONEXCLUSIVE”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(33,9): warning C4005: "DXGI_ERROR_NOT_CURRENTLY_AVAILABLE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58340,9):
+      zobacz poprzednią definicję „DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(34,9): warning C4005: "DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58350,9):
+      zobacz poprzednią definicję „DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(35,9): warning C4005: "DXGI_ERROR_REMOTE_OUTOFMEMORY": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58359,9):
+      zobacz poprzednią definicję „DXGI_ERROR_REMOTE_OUTOFMEMORY”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(917,9): warning C4005: "D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58665,9):
+      zobacz poprzednią definicję „D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(918,9): warning C4005: "D3D11_ERROR_FILE_NOT_FOUND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58674,9):
+      zobacz poprzednią definicję „D3D11_ERROR_FILE_NOT_FOUND”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(919,9): warning C4005: "D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58684,9):
+      zobacz poprzednią definicję „D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(920,9): warning C4005: "D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58693,9):
+      zobacz poprzednią definicję „D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,9): warning C4005: "D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58641,9):
+      zobacz poprzednią definicję „D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”
+  
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,9): warning C4005: "D3D10_ERROR_FILE_NOT_FOUND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58650,9):
+      zobacz poprzednią definicję „D3D10_ERROR_FILE_NOT_FOUND”
+  
+C:\Users\laxio\Desktop\Private Source\keybind.hpp(182,17): warning C4091: "static ": zignorowano na lewo od "CKeybind::c_keybind_type" podczas gdy brak deklaracji zmiennej
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\settings.hpp(22,29): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\settings.hpp(23,29): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\ida.hpp(103,9): warning C4005: "LOBYTE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(206,9):
+      zobacz poprzednią definicję „LOBYTE”
+  
+C:\Users\laxio\Desktop\Private Source\ida.hpp(104,9): warning C4005: "LOWORD": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(204,9):
+      zobacz poprzednią definicję „LOWORD”
+  
+C:\Users\laxio\Desktop\Private Source\ida.hpp(106,9): warning C4005: "HIBYTE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(207,9):
+      zobacz poprzednią definicję „HIBYTE”
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(58,32): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(58,53): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(58,74): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(100,22): warning C4244: "=": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(101,22): warning C4244: "=": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(102,22): warning C4244: "=": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(104,12): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(105,12): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(106,12): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(107,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(108,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(109,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(111,32): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(112,32): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(113,32): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(115,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(116,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(117,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(118,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(120,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(121,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(122,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(123,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(125,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(126,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(127,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(128,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(188,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(189,15): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(190,16): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(210,25): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(211,25): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(212,25): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(317,30): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(317,30): warning C4244:         with
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(317,30): warning C4244:         [
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(317,30): warning C4244:             T=double
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(317,30): warning C4244:         ]
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(331,21): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(332,21): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(333,21): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(376,16): warning C4091: "typedef ": zignorowano na lewo od "visible_cached" podczas gdy brak deklaracji zmiennej
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(467,11): warning C4244: "=": konwersja z "__int64" do "char", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(474,12): warning C4244: "=": konwersja z "__int64" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\spoof.h(402,29): warning C4305: "inicjowanie": obcięcie z "__int64" do "BYTE"
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\spoof.h(402,29): warning C4309: "inicjowanie": obcięcie stałej wartości
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\aimbot.hpp(59,39): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\aimbot.hpp(59,27): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(140,20): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(142,23): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(189,124): warning C4244: "argument": konwersja z "float" do "ImDrawFlags", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(189,72): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(189,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(189,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(189,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(190,124): warning C4244: "argument": konwersja z "float" do "ImDrawFlags", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(190,72): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(190,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(190,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(190,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(195,68): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(195,63): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(195,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(195,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(196,76): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(196,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(196,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(196,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(198,84): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(198,79): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(198,66): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(198,55): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(199,76): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(199,69): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(199,56): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(199,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(200,82): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(200,77): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(200,58): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(200,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(201,82): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(201,69): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(201,54): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(201,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(203,90): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(203,83): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(203,68): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(203,55): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(204,90): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(204,83): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(204,62): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(204,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(206,68): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(206,63): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(206,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(206,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(207,76): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(207,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(207,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(207,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(209,84): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(209,79): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(209,66): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(209,55): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(210,76): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(210,69): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(210,56): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(210,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(211,82): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(211,77): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(211,58): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(211,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(212,82): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(212,69): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(212,54): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(212,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(214,90): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(214,83): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(214,68): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(214,55): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(215,90): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(215,83): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(215,62): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(215,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(220,10): warning C4244: "inicjowanie": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(221,10): warning C4244: "inicjowanie": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(222,10): warning C4244: "inicjowanie": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(223,10): warning C4244: "inicjowanie": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(250,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(250,88): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(250,69): warning C4244: "argument": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(250,57): warning C4244: "argument": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(251,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(251,88): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(251,69): warning C4244: "argument": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(251,57): warning C4244: "argument": konwersja z "const double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(256,78): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(256,71): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(256,58): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(256,55): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(261,116): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(261,104): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(261,80): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(261,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(262,116): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(262,104): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(262,80): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(262,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(269,126): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(269,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(270,125): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(270,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(271,126): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(271,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(272,125): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(272,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(274,118): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(274,60): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(275,118): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(275,60): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(284,131): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(284,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(285,130): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(285,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(286,131): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(286,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(287,130): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(287,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(289,123): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(289,61): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(295,131): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(295,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(296,130): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(296,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(297,131): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(297,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(298,130): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(298,114): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(300,123): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(300,61): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(338,126): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(338,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(339,125): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(339,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(340,126): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(340,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(341,125): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(341,109): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(343,118): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(343,60): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(396,128): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(396,111): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(397,127): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(397,111): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(398,128): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(398,111): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(399,127): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(399,111): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(401,120): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(401,60): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(409,111): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(409,94): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(410,110): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(410,94): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(411,111): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(411,94): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(412,110): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(412,94): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(414,103): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(414,60): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(419,85): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(419,78): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(419,63): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(419,54): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(479,9): warning C4099: "Vector3": nazwa typu najpierw widoczna przy użyciu "class" teraz widoczna przy użyciu "struct"
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Users\laxio\Desktop\Private Source\sdk.hpp(26,7):
+      zobacz deklarację „Vector3”
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(480,9): warning C4099: "Vector3": nazwa typu najpierw widoczna przy użyciu "class" teraz widoczna przy użyciu "struct"
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Users\laxio\Desktop\Private Source\sdk.hpp(26,7):
+      zobacz deklarację „Vector3”
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(606,20): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(608,18): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(668,72): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(668,61): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(668,57): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(668,32): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(671,73): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(671,62): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(671,58): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(671,33): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(674,72): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(674,61): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(674,57): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(674,32): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\game.hpp(739,30): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(66,9): warning C4005: "STATUS_WAIT_0": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2549,9):
+      zobacz poprzednią definicję „STATUS_WAIT_0”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(223,9): warning C4005: "STATUS_ABANDONED_WAIT_0": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2550,9):
+      zobacz poprzednią definicję „STATUS_ABANDONED_WAIT_0”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(246,9): warning C4005: "STATUS_USER_APC": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2551,9):
+      zobacz poprzednią definicję „STATUS_USER_APC”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(282,9): warning C4005: "STATUS_TIMEOUT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2552,9):
+      zobacz poprzednią definicję „STATUS_TIMEOUT”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(291,9): warning C4005: "STATUS_PENDING": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2553,9):
+      zobacz poprzednią definicję „STATUS_PENDING”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(747,9): warning C4005: "DBG_EXCEPTION_HANDLED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2554,9):
+      zobacz poprzednią definicję „DBG_EXCEPTION_HANDLED”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(756,9): warning C4005: "DBG_CONTINUE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2555,9):
+      zobacz poprzednią definicję „DBG_CONTINUE”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(831,9): warning C4005: "STATUS_SEGMENT_NOTIFICATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2556,9):
+      zobacz poprzednią definicję „STATUS_SEGMENT_NOTIFICATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(994,9): warning C4005: "STATUS_FATAL_APP_EXIT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2557,9):
+      zobacz poprzednią definicję „STATUS_FATAL_APP_EXIT”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1332,9): warning C4005: "DBG_REPLY_LATER": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2558,9):
+      zobacz poprzednią definicję „DBG_REPLY_LATER”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1350,9): warning C4005: "DBG_TERMINATE_THREAD": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2559,9):
+      zobacz poprzednią definicję „DBG_TERMINATE_THREAD”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1359,9): warning C4005: "DBG_TERMINATE_PROCESS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2560,9):
+      zobacz poprzednią definicję „DBG_TERMINATE_PROCESS”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1368,9): warning C4005: "DBG_CONTROL_C": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2561,9):
+      zobacz poprzednią definicję „DBG_CONTROL_C”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1377,9): warning C4005: "DBG_PRINTEXCEPTION_C": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2562,9):
+      zobacz poprzednią definicję „DBG_PRINTEXCEPTION_C”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1386,9): warning C4005: "DBG_RIPEXCEPTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2563,9):
+      zobacz poprzednią definicję „DBG_RIPEXCEPTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1395,9): warning C4005: "DBG_CONTROL_BREAK": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2564,9):
+      zobacz poprzednią definicję „DBG_CONTROL_BREAK”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1404,9): warning C4005: "DBG_COMMAND_EXCEPTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2565,9):
+      zobacz poprzednią definicję „DBG_COMMAND_EXCEPTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1413,9): warning C4005: "DBG_PRINTEXCEPTION_WIDE_C": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2566,9):
+      zobacz poprzednią definicję „DBG_PRINTEXCEPTION_WIDE_C”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1445,9): warning C4005: "STATUS_GUARD_PAGE_VIOLATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2567,9):
+      zobacz poprzednią definicję „STATUS_GUARD_PAGE_VIOLATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1456,9): warning C4005: "STATUS_DATATYPE_MISALIGNMENT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2568,9):
+      zobacz poprzednią definicję „STATUS_DATATYPE_MISALIGNMENT”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1467,9): warning C4005: "STATUS_BREAKPOINT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2569,9):
+      zobacz poprzednią definicję „STATUS_BREAKPOINT”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1478,9): warning C4005: "STATUS_SINGLE_STEP": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2570,9):
+      zobacz poprzednią definicję „STATUS_SINGLE_STEP”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1781,9): warning C4005: "STATUS_LONGJUMP": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2571,9):
+      zobacz poprzednią definicję „STATUS_LONGJUMP”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1808,9): warning C4005: "STATUS_UNWIND_CONSOLIDATE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2572,9):
+      zobacz poprzednią definicję „STATUS_UNWIND_CONSOLIDATE”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(1923,9): warning C4005: "DBG_EXCEPTION_NOT_HANDLED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2573,9):
+      zobacz poprzednią definicję „DBG_EXCEPTION_NOT_HANDLED”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2090,9): warning C4005: "STATUS_ACCESS_VIOLATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2574,9):
+      zobacz poprzednią definicję „STATUS_ACCESS_VIOLATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2099,9): warning C4005: "STATUS_IN_PAGE_ERROR": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2575,9):
+      zobacz poprzednią definicję „STATUS_IN_PAGE_ERROR”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2117,9): warning C4005: "STATUS_INVALID_HANDLE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2576,9):
+      zobacz poprzednią definicję „STATUS_INVALID_HANDLE”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2162,9): warning C4005: "STATUS_INVALID_PARAMETER": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2577,9):
+      zobacz poprzednią definicję „STATUS_INVALID_PARAMETER”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2262,9): warning C4005: "STATUS_NO_MEMORY": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2578,9):
+      zobacz poprzednią definicję „STATUS_NO_MEMORY”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2319,9): warning C4005: "STATUS_ILLEGAL_INSTRUCTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2579,9):
+      zobacz poprzednią definicję „STATUS_ILLEGAL_INSTRUCTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2400,9): warning C4005: "STATUS_NONCONTINUABLE_EXCEPTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2580,9):
+      zobacz poprzednią definicję „STATUS_NONCONTINUABLE_EXCEPTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(2409,9): warning C4005: "STATUS_INVALID_DISPOSITION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2581,9):
+      zobacz poprzednią definicję „STATUS_INVALID_DISPOSITION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3342,9): warning C4005: "STATUS_ARRAY_BOUNDS_EXCEEDED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2582,9):
+      zobacz poprzednią definicję „STATUS_ARRAY_BOUNDS_EXCEEDED”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3352,9): warning C4005: "STATUS_FLOAT_DENORMAL_OPERAND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2583,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_DENORMAL_OPERAND”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3362,9): warning C4005: "STATUS_FLOAT_DIVIDE_BY_ZERO": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2584,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_DIVIDE_BY_ZERO”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3372,9): warning C4005: "STATUS_FLOAT_INEXACT_RESULT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2585,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_INEXACT_RESULT”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3382,9): warning C4005: "STATUS_FLOAT_INVALID_OPERATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2586,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_INVALID_OPERATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3392,9): warning C4005: "STATUS_FLOAT_OVERFLOW": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2587,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_OVERFLOW”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3402,9): warning C4005: "STATUS_FLOAT_STACK_CHECK": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2588,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_STACK_CHECK”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3412,9): warning C4005: "STATUS_FLOAT_UNDERFLOW": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2589,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_UNDERFLOW”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3422,9): warning C4005: "STATUS_INTEGER_DIVIDE_BY_ZERO": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2590,9):
+      zobacz poprzednią definicję „STATUS_INTEGER_DIVIDE_BY_ZERO”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3432,9): warning C4005: "STATUS_INTEGER_OVERFLOW": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2591,9):
+      zobacz poprzednią definicję „STATUS_INTEGER_OVERFLOW”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(3442,9): warning C4005: "STATUS_PRIVILEGED_INSTRUCTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2592,9):
+      zobacz poprzednią definicję „STATUS_PRIVILEGED_INSTRUCTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(4388,9): warning C4005: "STATUS_STACK_OVERFLOW": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2593,9):
+      zobacz poprzednią definicję „STATUS_STACK_OVERFLOW”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(4905,9): warning C4005: "STATUS_DLL_NOT_FOUND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2594,9):
+      zobacz poprzednią definicję „STATUS_DLL_NOT_FOUND”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(4934,9): warning C4005: "STATUS_ORDINAL_NOT_FOUND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2595,9):
+      zobacz poprzednią definicję „STATUS_ORDINAL_NOT_FOUND”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(4944,9): warning C4005: "STATUS_ENTRYPOINT_NOT_FOUND": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2596,9):
+      zobacz poprzednią definicję „STATUS_ENTRYPOINT_NOT_FOUND”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(4954,9): warning C4005: "STATUS_CONTROL_C_EXIT": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2597,9):
+      zobacz poprzednią definicję „STATUS_CONTROL_C_EXIT”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(5032,9): warning C4005: "STATUS_DLL_INIT_FAILED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2598,9):
+      zobacz poprzednią definicję „STATUS_DLL_INIT_FAILED”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(6029,9): warning C4005: "STATUS_CONTROL_STACK_VIOLATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2599,9):
+      zobacz poprzednią definicję „STATUS_CONTROL_STACK_VIOLATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(7623,9): warning C4005: "STATUS_FLOAT_MULTIPLE_FAULTS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2600,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_MULTIPLE_FAULTS”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(7633,9): warning C4005: "STATUS_FLOAT_MULTIPLE_TRAPS": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2601,9):
+      zobacz poprzednią definicję „STATUS_FLOAT_MULTIPLE_TRAPS”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(7765,9): warning C4005: "STATUS_REG_NAT_CONSUMPTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2602,9):
+      zobacz poprzednią definicję „STATUS_REG_NAT_CONSUMPTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(8748,9): warning C4005: "STATUS_HEAP_CORRUPTION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2603,9):
+      zobacz poprzednią definicję „STATUS_HEAP_CORRUPTION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(8976,9): warning C4005: "STATUS_STACK_BUFFER_OVERRUN": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2604,9):
+      zobacz poprzednią definicję „STATUS_STACK_BUFFER_OVERRUN”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(9103,9): warning C4005: "STATUS_INVALID_CRUNTIME_PARAMETER": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2605,9):
+      zobacz poprzednią definicję „STATUS_INVALID_CRUNTIME_PARAMETER”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(9166,9): warning C4005: "STATUS_ASSERTION_FAILURE": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2606,9):
+      zobacz poprzednią definicję „STATUS_ASSERTION_FAILURE”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(10075,9): warning C4005: "STATUS_ENCLAVE_VIOLATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2607,9):
+      zobacz poprzednią definicję „STATUS_ENCLAVE_VIOLATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(10808,9): warning C4005: "STATUS_INTERRUPTED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2608,9):
+      zobacz poprzednią definicję „STATUS_INTERRUPTED”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(10817,9): warning C4005: "STATUS_THREAD_NOT_RUNNING": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2609,9):
+      zobacz poprzednią definicję „STATUS_THREAD_NOT_RUNNING”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(11129,9): warning C4005: "STATUS_ALREADY_REGISTERED": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2610,9):
+      zobacz poprzednią definicję „STATUS_ALREADY_REGISTERED”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(15048,9): warning C4005: "STATUS_SXS_EARLY_DEACTIVATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2612,9):
+      zobacz poprzednią definicję „STATUS_SXS_EARLY_DEACTIVATION”
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntstatus.h(15057,9): warning C4005: "STATUS_SXS_INVALID_DEACTIVATION": ponowna definicja makra
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winnt.h(2613,9):
+      zobacz poprzednią definicję „STATUS_SXS_INVALID_DEACTIVATION”
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(46,58): warning C4267: "argument": konwersja z "size_t" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(60,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(148,24): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(159,22): warning C4312: "typ rzutowania": konwersja z "DWORD" na "void *" jest większej wielkości
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(214,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(253,34): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(446,24): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(458,22): warning C4312: "typ rzutowania": konwersja z "DWORD" na "void *" jest większej wielkości
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(497,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(716,37): warning C4244: "=": konwersja z "const unsigned __int64" do "uint32_t", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\util.hpp(717,35): warning C4244: "=": konwersja z "const unsigned __int64" do "uint32_t", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\loadup.hpp(116,18): warning C4267: "argument": konwersja z "size_t" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\util\loadup.hpp(260,46): warning C4101: "e": lokalna zmienna, do której nie istnieje odwołanie
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\vdm\vdm.hpp(67,20): warning C4267: "=": konwersja z "size_t" do "unsigned long", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\vdm\vdm.hpp(111,20): warning C4267: "=": konwersja z "size_t" do "unsigned long", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Users\laxio\Desktop\Private Source\vdm_ctx\vdm_ctx.hpp(89,5): warning C4312: "typ rzutowania": konwersja z "uint32_t" na "HANDLE" jest większej wielkości
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\utility(263,54): warning C4244: "inicjowanie": konwersja z "const uintptr_t" do "_Ty2", możliwa utrata danych
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\utility(263,54): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\utility(263,54): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\utility(263,54): warning C4244:             _Ty2=uint32_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\utility(263,54): warning C4244:         ]
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\utility(263,54):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\laxio\Desktop\Private Source\util\util.hpp(563,19):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::pair<uintptr_t,uint32_t> util::memory::sig_scan<17>(const char (&)[17],const char (&)[17])” funkcji szablon
+          C:\Users\laxio\Desktop\Private Source\util\util.hpp(554,4):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::pair<uintptr_t,uint32_t>::pair<const uintptr_t&,const uintptr_t&,0>(_Other1,_Other2) noexcept” funkcji szablon
+          with
+          [
+              _Other1=const uintptr_t &,
+              _Other2=const uintptr_t &
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xutility(4709,18): warning C4244: "=": konwersja z "wchar_t" do "char", możliwa utrata danych
+  (kompilowanie pliku źródłowego „initalizer.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xutility(4709,18):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\laxio\Desktop\Private Source\sdk.hpp(414,26):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)” funkcji szablon
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              C:\Users\laxio\Desktop\Private Source\sdk.hpp(414,26):
+              zobacz pierwsze odwołanie do elementu „std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string” w „get_player_platform”
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xstring(793,17):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)” funkcji szablon
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xstring(949,18):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)” funkcji szablon
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+C:\Users\laxio\Desktop\Private Source\sdk.hpp(403,1): warning C4715: "is_entity_visible”: niewszystkie ścieżki kodu zwracają wartość
+  d3dx11.lib(main.obj) : znaleziono moduł .netmodule MSIL lub moduł skompilowany z opcją /GL; konsolidowanie zostanie rozpoczęte ponownie z opcją /LTCG; dodaj opcję /LTCG do wiersza polecenia konsolidacji w celu podwyższenia wydajności konsolidatora
+  Trwa generowanie kodu
+  Zakończono generowanie kodu
+  FortniteExternalBase.vcxproj -> C:\Users\laxio\Desktop\Private Source\Build\Private Source.exe
