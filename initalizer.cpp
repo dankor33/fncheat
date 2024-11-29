@@ -19,19 +19,6 @@
 
 using namespace std;
 
-void textToSpeech(const std::string& text) {
-    ISpVoice* pVoice = NULL;
-    HRESULT hr = CoInitialize(NULL);
-    if (SUCCEEDED(hr)) {
-        hr = CoCreateInstance(CLSID_SpVoice, NULL, CLSCTX_ALL, IID_ISpVoice, (void**)&pVoice);
-        if (SUCCEEDED(hr)) {
-            std::wstring wText(text.begin(), text.end()); // any shit added by laxiorr
-            pVoice->Speak(wText.c_str(), SPF_DEFAULT, NULL);
-            pVoice->Release();
-        }
-        CoUninitialize();
-    }
-}
 
 void setTransparency(int transparency) { // any shit added by laxiorr// any shit added by laxiorr// any shit added by laxiorr// any shit added by laxiorr// any shit added by laxiorr
     HWND hwnd = GetConsoleWindow();
@@ -69,8 +56,7 @@ bool initialize() {
     // load our driver
   //  load_driver();
 
-    std::cout << " WELCOME IN SHIT PASTA" << std::endl;
-    textToSpeech(" WELCOME IN SHIT PASTA"); // any shit added by laxiorr
+    std::cout << " WELCOME IN DANKOR/xyz" << std::endl;
 
     // check if the driver is found
     if (!mem::find_driver()) 
@@ -78,13 +64,12 @@ bool initialize() {
         SetConsoleTextAttribute(h, 5);
         std::cout << "[";
         SetConsoleTextAttribute(h, 15);
-        std::cout << "+";
+        std::cout << "-";
         SetConsoleTextAttribute(h, 5);
         std::cout << "]";
 
         SetConsoleTextAttribute(h, 15);
         std::cout << " Driver wasn't found. Contact support in the server for more information." << std::endl;
-        textToSpeech(" Driver wasn't found. Contact support in the server for more information."); // any shit added by laxiorr
     }
 
     // sigma rizz balls
@@ -97,7 +82,7 @@ bool initialize() {
 
     SetConsoleTextAttribute(h, 15);
     std::cout << " Press ENTER to start cheat initialization. (IN LOBBY)\n";
-    textToSpeech(" Press ENTER to start cheat initialization. (IN LOBBY)"); // any shit added by laxiorr
+    //textToSpeech(" Press ENTER to start cheat initialization. (IN LOBBY)"); // any shit added by laxiorr
    // 
     //std::cin.get();
     //cin.get();
@@ -111,10 +96,11 @@ bool initialize() {
     std::cout << "]";
     SetConsoleTextAttribute(h, 15);
     std::cout << " Starting cheat initialization.." << std::endl;
-    textToSpeech(" Starting cheat initialization.."); // any shit added by laxiorr
+   // textToSpeech(" Starting cheat initialization.."); // any shit added by laxiorr
 
     // check if the driver was correctly loaded
    // if (util::get_module_base("mlx4_bus.sys")) 
+
     {
         while (true)
         {
@@ -122,8 +108,9 @@ bool initialize() {
          //   uintptr_t cr3 = mem::fetch_cr3();
             std::thread([&]() { for (;;) { cr3_loop(); } }).detach();
             settings::caching::base_address = base_address;
+            Setup();
+            setupRender();
 
-            render();
         }
     }
 

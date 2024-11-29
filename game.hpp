@@ -8,15 +8,16 @@
 #include "settings.hpp"
 #include "spoof.h"
 #include "aimbot.hpp"
+#include <iostream>
 
 #define IMGUI_DEFINE_MATH_OPERATORS
 
 void draw_watermark()
 {
 	// Text parts
-	const char* text1 = "FREE";
-	const char* text2 = "PASTA";
-	const char* text3 = "MENU -> INS/INSERT BTW ITS FREE (LEAKED)"; // New text to be added below
+	const char* text1 = "ANAL SEX";
+	const char* text2 = "Dankor's pasted cheat";
+	const char* text3 = "Private method trust udud"; // New text to be added below
 
 	// Font size
 	float fontSize = 18.0f;
@@ -84,9 +85,9 @@ void draw_watermark()
 void draw_watermarkfps()
 {
 	// Text parts
-	const char* text1 = "FREE";
-	const char* text2 = " PASTA";
-	const char* text3 = "MENU -> INS/INSERT"; // New text for the menu
+	const char* text1 = "ANAL SEX";
+	const char* text2 = "Dankor's pasted cheat";
+	const char* text3 = "Private method trust udud"; // New text to be added below
 
 	// Font size
 	float fontSize = 18.0f;
@@ -543,8 +544,8 @@ void game_loop()
 	{
 		cache::root_component = read<uintptr_t>(cache::local_pawn + ROOT_COMPONENT);
 		cache::relative_location = read<Vector3>(cache::root_component + RELATIVE_LOCATION);
-		cache::player_state = read<uintptr_t>(cache::local_pawn + PLAYER_STATE);
-		cache::my_team_id = read<int>(cache::player_state + TEAM_INDEX);
+		//cache::player_state = read<uintptr_t>(cache::local_pawn + PLAYER_STATE);
+		//cache::my_team_id = read<int>(cache::player_state + TEAM_INDEX);
 	}
 
 	cache::current_weapon = read<uintptr_t>(cache::local_pawn + CURRENT_WEAPON);
@@ -557,50 +558,56 @@ void game_loop()
 	cache::closest_distance = FLT_MAX;
 	cache::closest_pawn = NULL;
 
-	/*std::cout << "UWorld: " << cache::uworld << std::endl;
-	std::cout << "Game Instance: " << cache::game_instance << std::endl;
-	std::cout << "Local Players: " << cache::local_players << std::endl;
-	std::cout << "Player Controller: " << cache::player_controller << std::endl;
-	std::cout << "Local Pawn: " << cache::local_pawn << std::endl;
 
-	if (cache::local_pawn != 0) {
-		std::cout << "Root Component: " << cache::root_component << std::endl;
-		std::cout << "Relative Location: (" << cache::relative_location.x << ", "
-			<< cache::relative_location.y << ", "
-			<< cache::relative_location.z << ")" << std::endl;
-		std::cout << "Player State: " << cache::player_state << std::endl;
-		std::cout << "Team ID: " << cache::my_team_id << std::endl;
-	}
 
-	std::cout << "Current Weapon: " << cache::current_weapon << std::endl;
-	std::cout << "Game State: " << cache::game_state << std::endl;
-	std::cout << "Player Array: " << cache::player_array << std::endl;
-	std::cout << "Player Count: " << cache::player_count << std::endl;*/
+	uintptr_t player_array = read<uintptr_t>(cache::game_state + PLAYER_ARRAY);
+
+	std::vector<uintptr_t> playerStates(cache::player_count);
+	std::vector<uintptr_t> players(cache::player_count);
+	std::vector<uintptr_t> playersMeshes(cache::player_count);
+
+
+
+	for (int i = 0; i < cache::player_count; ++i)
+		mem::read_physical((PVOID)(player_array + (i * sizeof(uintptr_t))), (PVOID)& playerStates[i], sizeof(uintptr_t));
+	
+	for (int i = 0 ; i < cache::player_count; ++i)
+		if (is_valid(playerStates[i]))
+			mem::read_physical((PVOID)(playerStates[i] + PAWN_PRIVATE), (PVOID)&players[i], sizeof(uintptr_t));
+
+	for (int i = 0; i < cache::player_count; ++i)
+		if (is_valid(players[i]))
+			mem::read_physical((PVOID)(players[i] + MESH), (PVOID)&playersMeshes[i], sizeof(uintptr_t));
+
+	//for (int i = 0; i < cache::player_count; ++i) {
+	//	std::cout << "mesh: " << playersMeshes[i] << std::endl;
+	//	std::cout << "players : " << players[i] << std::endl;
+	//	std::cout << "state: " << playerStates[i] << std::endl;
+	//	std::cout << "Player Count: " << cache::player_count << std::endl;
+
+	//}
+
 
 	for (int i = 0; i < cache::player_count; i++)
 	{
-		uintptr_t player_state = read<uintptr_t>(cache::player_array + (i * sizeof(uintptr_t)));
-		if (!player_state)
-			continue;
 
-		int my_team_id = read<int>(cache::player_state + TEAM_INDEX);
-		int player_team_id = read<int>(player_state + TEAM_INDEX);
+		uintptr_t Player = players[i];
+		uintptr_t Mesh = playersMeshes[i];
+		uintptr_t State = playerStates[i];
+
+		int my_team_id = read<int>(State + TEAM_INDEX);
+		int player_team_id = read<int>(State + TEAM_INDEX);
 
 		if (my_team_id && player_team_id == my_team_id)
 			continue;
 
-		uintptr_t pawn_private = read<uintptr_t>(player_state + PAWN_PRIVATE);
-		if (!pawn_private || pawn_private == cache::local_pawn)
-			continue;
 
-		uintptr_t mesh = read<uintptr_t>(pawn_private + MESH);
-		if (!mesh)
-			continue;
 
-		Vector3 head3d = get_entity_bone(mesh, 110);
+
+		Vector3 head3d = get_entity_bone(Mesh, 110);
 		Vector2 head2d = project_world_to_screen(Vector3(head3d.x, head3d.y, head3d.z + 17));
 
-		Vector3 bottom3d = get_entity_bone(mesh, 0);
+		Vector3 bottom3d = get_entity_bone(Mesh, 0);
 		Vector2 bottom2d = project_world_to_screen(Vector3(bottom3d.x, bottom3d.y, bottom3d.z - 10));
 
 		float box_height = abs(head2d.y - bottom2d.y);
@@ -608,12 +615,11 @@ void game_loop()
 		float distance = cache::relative_location.distance(bottom3d) / 100;
 
 		visible_cached vc_local = {};
-		float last_render_time_on_screen = read<float>(mesh + LAST_SUBMIT_TIME_ON_SCREEN);
+		float last_render_time_on_screen = read<float>(Mesh + LAST_SUBMIT_TIME_ON_SCREEN);
 		vc_local.last_submit_time_on_screen = last_render_time_on_screen;
-		vc_local.mesh = mesh;
+		vc_local.mesh = Mesh;
 
 		visible_vec.push_back(vc_local);
-
 		/*if (settings::triggerbot::enable_triggerbot)
 		{
 			if (my_team_id != player_team_id)
@@ -652,7 +658,7 @@ void game_loop()
 			if (settings::visuals::box)
 			{
 				box_t bounds{};
-				get_bounding_box(mesh, bounds); // bounds is passed by reference so original value changed
+				get_bounding_box(Mesh, bounds); // bounds is passed by reference so original value changed
 
 				//draw_cornered_box(head2d.x - (box_width / 2), head2d.y, box_width, box_height, ImColor(250, 0, 0, 250), 1);
 
@@ -678,19 +684,19 @@ void game_loop()
 
 			if (settings::visuals::skeleton)
 			{
-				draw_skeleton(mesh);
+				draw_skeleton(Mesh);
 			}
 
 			if (settings::visuals::username)
 			{
-				draw_player_name(head2d, get_player_name(player_state));
+				draw_player_name(head2d, get_player_name(State));
 
 				head2d.y += ImGui::GetFontSize() + 2;
 			}
 
 			if (settings::visuals::platform)
 			{
-				draw_player_platform(head2d, get_player_platform(player_state));
+				draw_player_platform(head2d, get_player_platform(Mesh));
 
 				head2d.y += ImGui::GetFontSize() + 2;
 			}
@@ -698,7 +704,7 @@ void game_loop()
 			if (settings::visuals::rank)
 			{
 				int32_t rank_progress = read<int32_t>(
-					read<uintptr_t>(player_state + HABANERO_COMPONENT) + RANKED_PROGRESS + 0x10
+					read<uintptr_t>(State + HABANERO_COMPONENT) + RANKED_PROGRESS + 0x10
 				);
 
 				draw_player_rank(bottom2d, rank_progress);
@@ -741,7 +747,7 @@ void game_loop()
 		if (dist <= settings::aimbot::fov && dist < cache::closest_distance)
 		{
 			cache::closest_distance = dist;
-			cache::closest_pawn = pawn_private;
+			cache::closest_pawn = Player;
 		}
 	}
 

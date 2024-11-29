@@ -1773,342 +1773,466 @@ bool Keybind(CKeybind* keybind, const ImVec2& size_arg = ImVec2(0, 0), bool clic
     return pressed;
 }
 
-// Main code
-int render()
-{
-    // Create application window
-    //ImGui_ImplWin32_EnableDpiAwareness();
 
-    WNDCLASSEX wc;
+inline HWND window_handle;
 
-    wc.cbClsExtra = NULL;
-    wc.cbSize = sizeof(WNDCLASSEX);
-    wc.cbWndExtra = NULL;
-    wc.hbrBackground = (HBRUSH)CreateSolidBrush(RGB(0, 0, 0));
-    wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
-    wc.hIcon = LoadIcon(nullptr, IDI_APPLICATION);
-    wc.hIconSm = LoadIcon(nullptr, IDI_APPLICATION);
-    wc.hInstance = GetModuleHandle(nullptr);
-    wc.lpfnWndProc = WndProc;
-    wc.lpszClassName = TEXT("D3D11 Overlay ImGui");
-    wc.lpszMenuName = nullptr;
-    wc.style = CS_VREDRAW | CS_HREDRAW;
 
-    ::RegisterClassEx(&wc);
-    const HWND hwnd = ::CreateWindowExA_Spoofed(WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_NOACTIVATE, wc.lpszClassName, "D3D11 Overlay ImGui", WS_POPUP, 0, 0, GetSystemMetrics(SM_CXSCREEN), GetSystemMetrics(SM_CYSCREEN), nullptr, nullptr, wc.hInstance, nullptr);
 
-    SetLayeredWindowAttributes_Spoofed(hwnd, 0, 255, LWA_ALPHA);
-    const MARGINS margin = { -1, 0, 0, 0 };
-    DwmExtendFrameIntoClientArea(hwnd, &margin);
 
-    // Initialize Direct3D
-    if (!CreateDeviceD3D(hwnd))
+auto hijack() -> bool {
+   
+    window_handle = FindWindowA(("Afx:00400000:0:00010003:00000000:00000000"), ("RTSS")); //riva tuner
+    //window_handle = FindWindowA(("MedalOverlayClass"), ("MedalOverlay")); //medal
+    //window_handle = FindWindowA(("GDI+ Hook Window Class"), ("GDI+ Window (obs64.exe)")); //streamlabs & obs
+    //window_handle = FindWindowA(E("GDI+ Hook Window Class"), E("GDI+ Window (Greenshot.exe)")); //greenshot
+
+    if (!window_handle)
     {
-        CleanupDeviceD3D();
-        ::UnregisterClassW(L"D3D11 Overlay ImGui", wc.hInstance);
-        return 1;
+        MessageBoxA(0, ("Overlay failure [Make sure app is open]"), ("Dankor Dev Team aka NIGGERS"), MB_ICONINFORMATION);
+        exit(0);
     }
 
-    // Show the window
-    ::ShowWindow(hwnd, SW_SHOWDEFAULT);
-    ::UpdateWindow(hwnd);
+    int WindowWidth = GetSystemMetrics(SM_CXSCREEN);
+    int WindowHeight = GetSystemMetrics(SM_CYSCREEN);
 
-    // Setup Dear ImGui context
+    SetMenu(window_handle, NULL);
+    SetWindowPos(window_handle, NULL, 0, 0, GetSystemMetrics(SM_CXSCREEN), GetSystemMetrics(SM_CYSCREEN), SWP_SHOWWINDOW);
+
+
+
+    ShowWindow(window_handle, SW_SHOW);
+    SetWindowLongA(window_handle, GWL_EXSTYLE, WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_LAYERED);
+    SetWindowLongA(window_handle, GWL_STYLE, WS_VISIBLE);
+    SetWindowLongA(window_handle,
+        -20,
+        static_cast<LONG_PTR>(
+            static_cast<int>(GetWindowLongA(window_handle, -20)) | 0x20
+            )
+    );
+    SetWindowPos(window_handle, HWND_TOPMOST, 0, 0, WindowWidth, WindowHeight, SWP_SHOWWINDOW);
+
+
+
+    MARGINS Margin = { -1, -1, -1, -1 };
+    DwmExtendFrameIntoClientArea(
+        window_handle,
+        &Margin
+    );
+    SetLayeredWindowAttributes(window_handle, NULL, 0xFF, 0x02);
+
+    ShowWindow(window_handle, SW_SHOW);
+
+    UpdateWindow(window_handle);
+
+
+    return true;
+
+}
+
+
+
+auto SetupImgui() -> bool {
+    DXGI_SWAP_CHAIN_DESC swap_chain_description = {};
+    ZeroMemory(&swap_chain_description, sizeof(swap_chain_description));
+    //custom_memset((&swap_chain_description), 0, (sizeof(DXGI_SWAP_CHAIN_DESC)));
+    swap_chain_description.BufferCount = 2;
+    swap_chain_description.BufferDesc.Width = 0;
+    swap_chain_description.BufferDesc.Height = 0;
+    swap_chain_description.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+    //swap_chain_description.BufferDesc.RefreshRate.Numerator =  60;
+    //swap_chain_description.BufferDesc.RefreshRate.Denominator;
+    swap_chain_description.Flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
+    swap_chain_description.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
+    swap_chain_description.OutputWindow = window_handle;
+    swap_chain_description.SampleDesc.Count = 1;
+    swap_chain_description.SampleDesc.Quality = 0;
+    swap_chain_description.Windowed = TRUE;
+    swap_chain_description.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
+
+
+
+
+
+    const UINT createDeviceFlags = 0;
+
+    D3D_FEATURE_LEVEL d3d_feature_lvl;
+
+    const D3D_FEATURE_LEVEL d3d_feature_array[2] = { D3D_FEATURE_LEVEL_11_0, D3D_FEATURE_LEVEL_10_0, };
+
+
+
+    //static ID3D11Device* g_pd3dDevice = nullptr;
+    //static ID3D11DeviceContext* g_pd3dDeviceContext = nullptr;
+    //static IDXGISwapChain* g_pSwapChain = nullptr;
+    //static bool                     g_SwapChainOccluded = false;
+    //static UINT                     g_ResizeWidth = 0, g_ResizeHeight = 0;
+    //static ID3D11RenderTargetView* g_mainRenderTargetView = nullptr;
+
+    HRESULT res = D3D11CreateDeviceAndSwapChain(
+        nullptr,
+        D3D_DRIVER_TYPE_HARDWARE,
+        nullptr,
+        createDeviceFlags,
+        d3d_feature_array,
+        2,
+        D3D11_SDK_VERSION,
+        &swap_chain_description,
+        &g_pSwapChain,
+        &g_pd3dDevice,
+        &d3d_feature_lvl,
+        &g_pd3dDeviceContext);
+
+    if (res == DXGI_ERROR_UNSUPPORTED)
+        res = D3D11CreateDeviceAndSwapChain(nullptr, D3D_DRIVER_TYPE_WARP, nullptr, createDeviceFlags, d3d_feature_array, 2, D3D11_SDK_VERSION, &swap_chain_description, &g_pSwapChain, &g_pd3dDevice, &d3d_feature_lvl, &g_pd3dDeviceContext);
+    if (res != S_OK) {
+        // cleanup d3d
+        g_mainRenderTargetView->Release();
+        g_mainRenderTargetView = nullptr;
+        g_pSwapChain->Release();
+        g_pSwapChain = nullptr;
+        g_pd3dDeviceContext->Release();
+        g_pd3dDeviceContext = nullptr;
+        g_pd3dDevice->Release();
+        g_pd3dDevice = nullptr;
+        return false;
+    }
+
+    // create render target
+
+
+
+    ID3D11Texture2D* pBackBuffer;
+
+    g_pSwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
+
+    if (pBackBuffer != nullptr)
+    {
+        g_pd3dDevice->CreateRenderTargetView(pBackBuffer, nullptr, &g_mainRenderTargetView);
+        pBackBuffer->Release();
+    }
+
+    //
+
+    SetWindowPos(window_handle, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
+
+
+
+
+
+
     IMGUI_CHECKVERSION();
+
     ImGui::CreateContext();
+
+    //add fonts etc here
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
 
-    // Setup Dear ImGui style
-    ImGui::StyleColorsDark();
-    //ImGui::StyleColorsLight();
+    /*fonts::inter_font = io.Fonts->AddFontFromMemoryTTF(&inter, sizeof inter, 17, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::inter_font_b = io.Fonts->AddFontFromMemoryTTF(&inter, sizeof inter, 18.5f, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::inter_bold_font = io.Fonts->AddFontFromMemoryTTF(&inter_bold, sizeof inter_bold, 20, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::inter_bold_font2 = io.Fonts->AddFontFromMemoryTTF(&inter_bold, sizeof inter_bold, 17, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::inter_bold_font3 = io.Fonts->AddFontFromMemoryTTF(&inter_bold, sizeof inter_bold, 18, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::inter_bold_font4 = io.Fonts->AddFontFromMemoryTTF(&inter_bold, sizeof inter_bold, 16, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::combo_icon_font = io.Fonts->AddFontFromMemoryTTF(&combo_icon, sizeof combo_icon, 15, NULL, io.Fonts->GetGlyphRangesCyrillic());
+    fonts::weapon_font = io.Fonts->AddFontFromMemoryTTF(&weapon, sizeof weapon, 15, NULL, io.Fonts->GetGlyphRangesCyrillic());*/
 
-    // Setup Platform/Renderer backends
-    ImGui_ImplWin32_Init(hwnd);
+
+    ImGui_ImplWin32_Init(window_handle);
+
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
-    // Load Fonts
-    // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them.
-    // - AddFontFromFileTTF() will return the ImFont* so you can store it if you need to select the font among multiple.
-    // - If the file cannot be loaded, the function will return a nullptr. Please handle those errors in your application (e.g. use an assertion, or display an error and quit).
-    // - The fonts will be rasterized at a given size (w/ oversampling) and stored into a texture when calling ImFontAtlas::Build()/GetTexDataAsXXXX(), which ImGui_ImplXXXX_NewFrame below will call.
-    // - Use '#define IMGUI_ENABLE_FREETYPE' in your imconfig file to use Freetype for higher quality font rendering.
-    // - Read 'docs/FONTS.md' for more instructions and details.
-    // - Remember that in C/C++ if you want to include a backslash \ in a string literal you need to write a double backslash \\ !
-    //io.Fonts->AddFontDefault();
-    io.Fonts->AddFontFromFileTTF("C:\\diddyfont.ttf", 18.0f);
-    //io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\diddyfont.ttf", 18.0f);
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/DroidSans.ttf", 16.0f);
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Roboto-Medium.ttf", 16.0f);
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Cousine-Regular.ttf", 15.0f);
-    //ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf", 18.0f, nullptr, io.Fonts->GetGlyphRangesJapanese());
-    //IM_ASSERT(font != nullptr);
+    g_pd3dDevice->Release();
 
-    // Our state
-    bool show_demo_window = true;
-    bool show_another_window = false;
-    ImVec4 clear_color = ImVec4(0, 0, 0, 0);
 
-    // Main loop
-    bool done = false;
+    return true;
+}
 
-    while (!done)
+
+auto Setup() -> bool {
+    //running
+    hijack();
+    SetupImgui();
+
+
+    return true;
+}
+
+
+
+// Main code
+auto render()
+{
+
+    static RECT rect_og;
+    MSG msg = { NULL };
+    //custom_memset((&msg), 0, (sizeof(MSG)));
+    ZeroMemory(&msg, sizeof(MSG));
+
+
+    ImGui_ImplDX11_NewFrame();
+    ImGui_ImplWin32_NewFrame();
+    ImGui::NewFrame();
+
+    if (GetForegroundWindow_Spoofed() == FindWindowA_Spoofed(0, "Fortnite  ") || GetForegroundWindow_Spoofed() == window_handle)
     {
-        // Poll and handle messages (inputs, window resize, etc.)
-        // See the WndProc() function below for our to dispatch events to the Win32 backend.
-        MSG msg;
-        while (::PeekMessage(&msg, nullptr, 0U, 0U, PM_REMOVE))
+        if (settings::aimbot::enable)
         {
-            ::TranslateMessage(&msg);
-            ::DispatchMessage(&msg);
-            if (msg.message == WM_QUIT)
-                done = true;
-        }
-        if (done)
-            break;
+            settings::aimbot::aimbotkey.update();
 
-        // Handle window being minimized or screen locked
-        if (g_SwapChainOccluded && g_pSwapChain->Present(0, DXGI_PRESENT_TEST) == DXGI_STATUS_OCCLUDED)
-        {
-            ::Sleep(10);
-            continue;
-        }
-        g_SwapChainOccluded = false;
-
-        // Handle window resize (we don't resize directly in the WM_SIZE handler)
-        if (g_ResizeWidth != 0 && g_ResizeHeight != 0)
-        {
-            CleanupRenderTarget();
-            g_pSwapChain->ResizeBuffers(0, g_ResizeWidth, g_ResizeHeight, DXGI_FORMAT_UNKNOWN, 0);
-            g_ResizeWidth = g_ResizeHeight = 0;
-            CreateRenderTarget();
-        }
-
-        // Start the Dear ImGui frame
-        ImGui_ImplDX11_NewFrame();
-        ImGui_ImplWin32_NewFrame();
-        ImGui::NewFrame();
-
-        if (GetForegroundWindow_Spoofed() == FindWindowA_Spoofed(0, "Fortnite  ") || GetForegroundWindow_Spoofed() == hwnd)
-        {
-            if (settings::aimbot::enable)
+            if (settings::aimbot::aimbotkey.enabled)
             {
-                settings::aimbot::aimbotkey.update();
-
-                if (settings::aimbot::aimbotkey.enabled)
-                {
-                    aimbot(cache::closest_pawn);
-                }
+                aimbot(cache::closest_pawn);
             }
         }
-
-        game_loop();
-
-        if (settings::aimbot::show_fov)
-            ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ImGui::GetIO().DisplaySize.x / 2, ImGui::GetIO().DisplaySize.y / 2), settings::aimbot::fov, ImColor(250, 250, 250, 250), 100, 1.0f);
-
-        float alphaSpeed = 4.0f * ImGui::GetIO().DeltaTime;
-
-        if (settings::overlay::show_menu)
-            menuAlpha = Clamp(menuAlpha + alphaSpeed, 0.0f, 1.0f);
-        else
-            menuAlpha = Clamp(menuAlpha - alphaSpeed, 0.0f, 1.0f);
-
-        if (menuAlpha > 0.0f)
-        {
-            ImGui::GetBackgroundDrawList()->AddRectFilled(ImVec2(0, 0), ImGui::GetIO().DisplaySize, ImColor(0, 0, 0, static_cast<int>(200 * menuAlpha)));
-
-            ImGuiStyle& style = ImGui::GetStyle();
-            style.WindowRounding = 5.0f;
-            style.FrameRounding = 3.0f;
-            style.PopupRounding = 5.0f;
-            style.ScrollbarRounding = 3.0f;
-            style.GrabRounding = 3.0f;
-            style.WindowBorderSize = 1.0f;
-            style.FrameBorderSize = 1.0f;
-            style.WindowPadding = ImVec2(10, 10);
-            style.FramePadding = ImVec2(5, 5);
-
-            ImGui::SetNextWindowBgAlpha(menuAlpha);
-            ImGui::SetNextWindowSize(ImVec2(660, 600));
-            ImGui::Begin("Force Cheats Public Build | 11/12/2024", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoCollapse);
-            {
-                // Set general colors for the menu
-                ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 1.0f, 1.0f, 1.0f)); // White text
-                ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(1.0f, 1.0f, 1.0f, 0.5f)); // White border with some transparenty
-                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.2f, 0.2f, 1.0f)); // Dark button background
-                ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.3f, 0.3f, 0.3f, 1.0f)); // Button hover color
-                ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.4f, 0.4f, 0.4f, 1.0f)); // Button active color
-                ImGui::PushStyleColor(ImGuiCol_CheckMark, ImVec4(185.0f / 255.0f, 0.0f / 255.0f, 191.0f / 255.0f, 1.0f)); // checkmark color wjhite
-
-                // Tab Bar Settings (Increase spacing between tab items)
-                ImGui::PushStyleVar(ImGuiStyleVar_TabRounding, 5.0f); // tab roundring
-
-                //  the spacing between tab items
-                ImGuiStyle& style = ImGui::GetStyle();
-                style.ItemInnerSpacing.x = 25; // x spacing between tab items
-                style.ItemSpacing.x = 10;      // x spacing between items in general
-
-                // Adjust other tab-related properties if desired
-                style.TabRounding = 5.0f;      // Tab rounding
-                style.FramePadding = ImVec2(10, 5); // Padding within each tab label
-
-                if (ImGui::BeginTabBar("main"))
-                {
-                    if (ImGui::BeginTabItem("        AIMBOT        "))
-                    {
-                        ImGui::BeginChild("Aimbot", ImVec2(315, 500), true);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "AIMBOT");
-                        ImGui::Separator();
-
-                        ImGui::Checkbox("ENABLE", &settings::aimbot::enable);
-
-
-                        ImGui::Checkbox("ENABLE SMOOTHNESS", &settings::aimbot::enable_smoothness);
-                        ImGui::SliderFloat("SMOOTH X", &settings::aimbot::smoothness_x, 1, 30);
-                        ImGui::SliderFloat("SMOOTH Y", &settings::aimbot::smoothness_y, 1, 30);
-
-                        ImGui::Checkbox("AIMBOT FOV", &settings::aimbot::show_fov);
-                        ImGui::SameLine();
-                        ImGui::Checkbox("OUTSIDE FOV", &settings::aimbot::disable_outside_fov);
-                        ImGui::SliderFloat("SIZE", &settings::aimbot::fov, 50, 500);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "TYPE");
-                        ImGui::Combo("##type", &settings::aimbot::aimbot_type, settings::aimbot::aimbot_types, IM_ARRAYSIZE(settings::aimbot::aimbot_types));
-
-
-                        ImGui::Combo("##part", &settings::aimbot::aimbot_part, settings::aimbot::aimbot_parts, IM_ARRAYSIZE(settings::aimbot::aimbot_parts));
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "KEYBIND");
-                        Keybind(&settings::aimbot::aimbotkey, ImVec2(60, 20));
-
-                        ImGui::EndChild();
-                        ImGui::SameLine();
-
-                        ImGui::BeginChild("Triggerbot", ImVec2(315, 500), true);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "TRIGGERBOT");
-                        ImGui::Separator();
-
-                        ImGui::Checkbox("ENABLE", &settings::triggerbot::enable_triggerbot);
-                        ImGui::SliderInt("DELAY", &settings::triggerbot::triggerbot_delay, 1, 50);
-                        ImGui::SliderInt("DISTANCE", &settings::triggerbot::triggerbot_distance, 1, 30);
-
-                        ImGui::EndChild();
-                        ImGui::EndTabItem();
-                    }
-
-
-                    if (ImGui::BeginTabItem("        VISUALS        "))
-                    {
-                        ImGui::BeginChild("ESP", ImVec2(315, 500), true);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "ESP");
-                        ImGui::Separator();
-
-                        ImGui::Checkbox("BOX", &settings::visuals::box);
-                        ImGui::Checkbox("SKELETON", &settings::visuals::skeleton);
-                        ImGui::Checkbox("SNAPLINES", &settings::visuals::line);
-                        ImGui::Checkbox("USERNAME", &settings::visuals::username);
-                        ImGui::Checkbox("PLATFORM", &settings::visuals::platform);
-                        ImGui::Checkbox("WEAPON", &settings::visuals::weapon);
-                        ImGui::Checkbox("RANK", &settings::visuals::rank);
-                        ImGui::Checkbox("DISTANCE", &settings::visuals::distance);
-
-                        ImGui::EndChild();
-                        ImGui::SameLine();
-
-                        ImGui::BeginChild("Settings", ImVec2(315, 500), true);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "SETTINGS");
-                        ImGui::Separator();
-
-                        ImGui::Text("BOX TYPE");
-                        ImGui::Combo("##Boxtype", &settings::visuals::box_type, settings::visuals::box_types, IM_ARRAYSIZE(settings::visuals::box_types));
-                        ImGui::SliderFloat("Box Thickness", &settings::visuals::boxthickness, 0.1f, 10.0f, "%.1f");
-                        ImGui::Text("SKELETON THICKNESS");
-                        ImGui::SliderFloat("Skeleton Thickness", &settings::visuals::SkeletonThickness, 0.1f, 10.0f, "%.1f");
-
-                        ImGui::EndChild();
-                        ImGui::EndTabItem();
-                    }
-
-                    if (ImGui::BeginTabItem("        SETTINGS        "))
-                    {
-                        ImGui::BeginChild("Settings", ImVec2(315, 500), true);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "OPTIONS");
-                        ImGui::Separator();
-
-                        ImGui::Checkbox("VISIBLE CHECK", &settings::checks::visible_check);
-                        ImGui::Checkbox("TEAM CHECK", &settings::checks::team_check);
-                        ImGui::Checkbox("WATERMARK", &settings::visuals::watermark);
-                        ImGui::Checkbox("FPS COUNTER", &settings::visuals::fpscounter);
-
-                        ImGui::EndChild();
-                        ImGui::EndTabItem();
-                    }
-
-                    if (ImGui::BeginTabItem("        EXPLOITS        "))
-                    {
-                        ImGui::BeginChild("Exploits", ImVec2(315, 500), true);
-
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "EXPLOITS");
-                        ImGui::Separator();
-
-                        //ImGui::Checkbox("MAGIC BULLET", &settings::exploits::magic_bullet);
-                        ImGui::Checkbox("NO SPREAD", &settings::exploits::no_spread);
-                        ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "ADDING MORE EXPLOITS IN NEXT UPDATE");
-
-                        ImGui::EndChild();
-                        ImGui::EndTabItem();
-                    }
-
-                    ImGui::EndTabBar();
-                }
-
-                // Pop custom styles
-                ImGui::PopStyleVar(2); // Pop custom style in tab item space
-                ImGui::PopStyleColor(6); // Pop all custom style colors
-                // Reset the style variables after the tab bar if needed
-                style.ItemInnerSpacing.x = 4;  // Reset to space default value
-                style.ItemSpacing.x = 8;       // Reset to space to default value
-            }
-            ImGui::End();
-        }
-
-        if (GetAsyncKeyState(VK_INSERT) & 1)
-            settings::overlay::show_menu = !settings::overlay::show_menu;
-
-        if (settings::overlay::show_menu)
-            SetWindowLong(hwnd, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_LAYERED | WS_EX_TOOLWINDOW);
-        else
-            SetWindowLong(hwnd, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_LAYERED | WS_EX_TOOLWINDOW);
-
-        // Rendering
-        ImGui::Render();
-        const float clear_color_with_alpha[4] = { clear_color.x * clear_color.w, clear_color.y * clear_color.w, clear_color.z * clear_color.w, clear_color.w };
-        g_pd3dDeviceContext->OMSetRenderTargets(1, &g_mainRenderTargetView, nullptr);
-        g_pd3dDeviceContext->ClearRenderTargetView(g_mainRenderTargetView, clear_color_with_alpha);
-        ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
-
-        // Present
-        HRESULT hr = g_pSwapChain->Present(1, 0);   // Present with vsync
-        //HRESULT hr = g_pSwapChain->Present(0, 0); // Present without vsync
-        g_SwapChainOccluded = (hr == DXGI_STATUS_OCCLUDED);
     }
 
-    // Cleanup
+    game_loop();
+
+    if (settings::aimbot::show_fov)
+        ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ImGui::GetIO().DisplaySize.x / 2, ImGui::GetIO().DisplaySize.y / 2), settings::aimbot::fov, ImColor(250, 250, 250, 250), 100, 1.0f);
+
+    float alphaSpeed = 4.0f * ImGui::GetIO().DeltaTime;
+
+    if (settings::overlay::show_menu)
+        menuAlpha = Clamp(menuAlpha + alphaSpeed, 0.0f, 1.0f);
+    else
+        menuAlpha = Clamp(menuAlpha - alphaSpeed, 0.0f, 1.0f);
+
+    if (menuAlpha > 0.0f)
+    {
+        ImGui::GetBackgroundDrawList()->AddRectFilled(ImVec2(0, 0), ImGui::GetIO().DisplaySize, ImColor(0, 0, 0, static_cast<int>(200 * menuAlpha)));
+
+        ImGuiStyle& style = ImGui::GetStyle();
+        style.WindowRounding = 5.0f;
+        style.FrameRounding = 3.0f;
+        style.PopupRounding = 5.0f;
+        style.ScrollbarRounding = 3.0f;
+        style.GrabRounding = 3.0f;
+        style.WindowBorderSize = 1.0f;
+        style.FrameBorderSize = 1.0f;
+        style.WindowPadding = ImVec2(10, 10);
+        style.FramePadding = ImVec2(5, 5);
+
+        ImGui::SetNextWindowBgAlpha(menuAlpha);
+        ImGui::SetNextWindowSize(ImVec2(660, 600));
+        ImGui::Begin("Nigga Cheats Private Build | 28/11/2024", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoCollapse);
+        {
+            // Set general colors for the menu
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 1.0f, 1.0f, 1.0f)); // White text
+            ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(1.0f, 1.0f, 1.0f, 0.5f)); // White border with some transparenty
+            ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.2f, 0.2f, 1.0f)); // Dark button background
+            ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.3f, 0.3f, 0.3f, 1.0f)); // Button hover color
+            ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.4f, 0.4f, 0.4f, 1.0f)); // Button active color
+            ImGui::PushStyleColor(ImGuiCol_CheckMark, ImVec4(185.0f / 255.0f, 0.0f / 255.0f, 191.0f / 255.0f, 1.0f)); // checkmark color wjhite
+
+            // Tab Bar Settings (Increase spacing between tab items)
+            ImGui::PushStyleVar(ImGuiStyleVar_TabRounding, 5.0f); // tab roundring
+
+            //  the spacing between tab items
+            ImGuiStyle& style = ImGui::GetStyle();
+            style.ItemInnerSpacing.x = 25; // x spacing between tab items
+            style.ItemSpacing.x = 10;      // x spacing between items in general
+
+            // Adjust other tab-related properties if desired
+            style.TabRounding = 5.0f;      // Tab rounding
+            style.FramePadding = ImVec2(10, 5); // Padding within each tab label
+
+            if (ImGui::BeginTabBar("main"))
+            {
+                if (ImGui::BeginTabItem("        AIMBOT        "))
+                {
+                    ImGui::BeginChild("Aimbot", ImVec2(315, 500), true);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "AIMBOT");
+                    ImGui::Separator();
+
+                    ImGui::Checkbox("ENABLE", &settings::aimbot::enable);
+
+
+                    ImGui::Checkbox("ENABLE SMOOTHNESS", &settings::aimbot::enable_smoothness);
+                    ImGui::SliderFloat("SMOOTH X", &settings::aimbot::smoothness_x, 1, 30);
+                    ImGui::SliderFloat("SMOOTH Y", &settings::aimbot::smoothness_y, 1, 30);
+
+                    ImGui::Checkbox("AIMBOT FOV", &settings::aimbot::show_fov);
+                    ImGui::SameLine();
+                    ImGui::Checkbox("OUTSIDE FOV", &settings::aimbot::disable_outside_fov);
+                    ImGui::SliderFloat("SIZE", &settings::aimbot::fov, 50, 500);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "TYPE");
+                    ImGui::Combo("##type", &settings::aimbot::aimbot_type, settings::aimbot::aimbot_types, IM_ARRAYSIZE(settings::aimbot::aimbot_types));
+
+
+                    ImGui::Combo("##part", &settings::aimbot::aimbot_part, settings::aimbot::aimbot_parts, IM_ARRAYSIZE(settings::aimbot::aimbot_parts));
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "KEYBIND");
+                    Keybind(&settings::aimbot::aimbotkey, ImVec2(60, 20));
+
+                    ImGui::EndChild();
+                    ImGui::SameLine();
+
+                    ImGui::BeginChild("Triggerbot", ImVec2(315, 500), true);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "TRIGGERBOT");
+                    ImGui::Separator();
+
+                    ImGui::Checkbox("ENABLE", &settings::triggerbot::enable_triggerbot);
+                    ImGui::SliderInt("DELAY", &settings::triggerbot::triggerbot_delay, 1, 50);
+                    ImGui::SliderInt("DISTANCE", &settings::triggerbot::triggerbot_distance, 1, 30);
+
+                    ImGui::EndChild();
+                    ImGui::EndTabItem();
+                }
+
+
+                if (ImGui::BeginTabItem("        VISUALS        "))
+                {
+                    ImGui::BeginChild("ESP", ImVec2(315, 500), true);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "ESP");
+                    ImGui::Separator();
+
+                    ImGui::Checkbox("BOX", &settings::visuals::box);
+                    ImGui::Checkbox("SKELETON", &settings::visuals::skeleton);
+                    ImGui::Checkbox("SNAPLINES", &settings::visuals::line);
+                    ImGui::Checkbox("USERNAME", &settings::visuals::username);
+                    ImGui::Checkbox("PLATFORM", &settings::visuals::platform);
+                    ImGui::Checkbox("WEAPON", &settings::visuals::weapon);
+                    ImGui::Checkbox("RANK", &settings::visuals::rank);
+                    ImGui::Checkbox("DISTANCE", &settings::visuals::distance);
+
+                    ImGui::EndChild();
+                    ImGui::SameLine();
+
+                    ImGui::BeginChild("Settings", ImVec2(315, 500), true);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "SETTINGS");
+                    ImGui::Separator();
+
+                    ImGui::Text("BOX TYPE");
+                    ImGui::Combo("##Boxtype", &settings::visuals::box_type, settings::visuals::box_types, IM_ARRAYSIZE(settings::visuals::box_types));
+                    ImGui::SliderFloat("Box Thickness", &settings::visuals::boxthickness, 0.1f, 10.0f, "%.1f");
+                    ImGui::Text("SKELETON THICKNESS");
+                    ImGui::SliderFloat("Skeleton Thickness", &settings::visuals::SkeletonThickness, 0.1f, 10.0f, "%.1f");
+
+                    ImGui::EndChild();
+                    ImGui::EndTabItem();
+                }
+
+                if (ImGui::BeginTabItem("        SETTINGS        "))
+                {
+                    ImGui::BeginChild("Settings", ImVec2(315, 500), true);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "OPTIONS");
+                    ImGui::Separator();
+
+                    ImGui::Checkbox("VISIBLE CHECK", &settings::checks::visible_check);
+                    ImGui::Checkbox("TEAM CHECK", &settings::checks::team_check);
+                    ImGui::Checkbox("WATERMARK", &settings::visuals::watermark);
+                    ImGui::Checkbox("FPS COUNTER", &settings::visuals::fpscounter);
+
+                    ImGui::EndChild();
+                    ImGui::EndTabItem();
+                }
+
+                if (ImGui::BeginTabItem("        EXPLOITS        "))
+                {
+                    ImGui::BeginChild("Exploits", ImVec2(315, 500), true);
+
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "EXPLOITS");
+                    ImGui::Separator();
+
+                    //ImGui::Checkbox("MAGIC BULLET", &settings::exploits::magic_bullet);
+                    ImGui::Checkbox("NO SPREAD", &settings::exploits::no_spread);
+                    ImGui::TextColored(ImVec4(0.7255f, 0.0f, 0.7490f, 1.0f), "ADDING MORE EXPLOITS IN NEXT UPDATE");
+
+                    ImGui::EndChild();
+                    ImGui::EndTabItem();
+                }
+
+                ImGui::EndTabBar();
+            }
+
+            // Pop custom styles
+            ImGui::PopStyleVar(2); // Pop custom style in tab item space
+            ImGui::PopStyleColor(6); // Pop all custom style colors
+            // Reset the style variables after the tab bar if needed
+            style.ItemInnerSpacing.x = 4;  // Reset to space default value
+            style.ItemSpacing.x = 8;       // Reset to space to default value
+        }
+        ImGui::End();
+    }
+
+    if (GetAsyncKeyState(VK_INSERT) & 1)
+        settings::overlay::show_menu = !settings::overlay::show_menu;
+
+    if (settings::overlay::show_menu)
+        SetWindowLong(window_handle, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_LAYERED | WS_EX_TOOLWINDOW);
+    else
+        SetWindowLong(window_handle, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_LAYERED | WS_EX_TOOLWINDOW);
+
+    // Rendering
+    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 0.f);
+    ImGui::Render();
+    const float clear_color_with_alpha[4] = { clear_color.x * clear_color.w, clear_color.y * clear_color.w, clear_color.z * clear_color.w, clear_color.w };
+    g_pd3dDeviceContext->OMSetRenderTargets(1, &g_mainRenderTargetView, nullptr);
+    g_pd3dDeviceContext->ClearRenderTargetView(g_mainRenderTargetView, clear_color_with_alpha);
+    ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
+
+    return 0;
+}
+
+
+
+auto setupRender() -> bool {
+    static RECT rect_og;
+    MSG msg = { NULL };
+    //custom_memset((&msg), 0, (sizeof(MSG)));
+    ZeroMemory(&msg, sizeof(MSG));
+
+    while (msg.message != WM_QUIT)
+    {
+        UpdateWindow(window_handle);
+        ShowWindow(window_handle, SW_SHOW);
+
+        if ((PeekMessageA)(&msg, window_handle, 0, 0, PM_REMOVE))
+        {
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
+        //
+        ImGuiIO& io = ImGui::GetIO();
+        //io.ImeWindowHandle = window_handle;
+        io.DeltaTime = 1.0f / 60.0f;
+
+        POINT p_cursor;
+        GetCursorPos(&p_cursor);
+        io.MousePos.x = p_cursor.x;
+        io.MousePos.y = p_cursor.y;
+
+        if (GetAsyncKeyState(VK_LBUTTON)) {
+            io.MouseDown[0] = true;
+            io.MouseClicked[0] = true;
+            io.MouseClickedPos[0].x = io.MousePos.x;
+            io.MouseClickedPos[0].x = io.MousePos.y;
+        }
+        else
+            io.MouseDown[0] = false;
+
+     
+        g_pSwapChain->Present(0, 0);
+       
+
+
+        render();
+    }
     ImGui_ImplDX11_Shutdown();
     ImGui_ImplWin32_Shutdown();
     ImGui::DestroyContext();
 
-    CleanupDeviceD3D();
-    ::DestroyWindow(hwnd);
-    ::UnregisterClassW(L"D3D11 Overlay ImGui", wc.hInstance);
+    (DestroyWindow)(window_handle);
 
-    return 0;
+    return true;
 }
 
 // Helper functions

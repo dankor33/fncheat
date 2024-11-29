@@ -1,0 +1,64 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Ignore Visual Studio build and intermediate directories
+.vs/
+/Private Source/x64
+/Private Source/Build
+*.tlog
+*.obj
+*.lastbuildstate
+Private Source/x64/drv_image.obj
+Private Source/x64/entrypoint.obj
+Private Source/x64/FortniteExternalBase.log
+Private Source/x64/imgui.obj
+Private Source/x64/imgui_demo.obj
+Private Source/x64/imgui_draw.obj
+Private Source/x64/imgui_impl_dx11.obj
+Private Source/x64/imgui_impl_win32.obj
+Private Source/x64/imgui_tables.obj
+Private Source/x64/imgui_widgets.obj
+Private Source/x64/initalizer.obj
+Private Source/x64/Private Source.exe.recipe
+Private Source/x64/Private Source.tlog/CL.command.1.tlog
+Private Source/x64/Private Source.tlog/Cl.items.tlog
+Private Source/x64/Private Source.tlog/CL.read.1.tlog
+Private Source/x64/Private Source.tlog/CL.write.1.tlog
+Private Source/x64/Private Source.tlog/link.command.1.tlog
+Private Source/x64/Private Source.tlog/link.read.1.tlog
+Private Source/x64/Private Source.tlog/link.secondary.1.tlog
+Private Source/x64/Private Source.tlog/link.write.1.tlog
+Private Source/x64/Private Source.tlog/Private Source.lastbuildstate
+Private Source/x64/vc143.pdb
+Private Source/x64/vdm_ctx.obj
+Build/Private Source.rar
+Build/imgui.ini

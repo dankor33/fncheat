@@ -48,6 +48,12 @@
     <ClCompile Include="vdm_ctx\vdm_ctx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="driver.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offsets.hpp">
@@ -87,9 +93,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="initalizer.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="driver.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="drv_image\drv_image.hpp">
@@ -145,8 +148,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="Flux\FluxSDK.lib" />
-    <Library Include="Flux\FluxSDK_x86.lib" />
     <Library Include="ImGui\d3dx11.lib" />
   </ItemGroup>
 </Project>
